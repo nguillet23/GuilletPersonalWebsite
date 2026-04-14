@@ -26,7 +26,7 @@ The data pipeline (Python) streams tracker positions into the Unity scene at low
 
 The workflow handles violation letters, dues statements, and meeting minutes — cutting processing time from hours to minutes per batch.`,
     github: "https://github.com/nguillet23/HOA",
-    netlify: "http://hoamacro.netlify.app/",
+    netlify: null,
     live: null,
   },
   {
