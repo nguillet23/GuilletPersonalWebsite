@@ -423,6 +423,15 @@ h1 { animation: fadeUp 0.5s 0.1s ease both; }
 .hero-btns { animation: fadeUp 0.5s 0.3s ease both; }
 .scroll-hint { animation: fadeUp 0.5s 0.4s ease both; }
 
+.hero-name {
+    font-family: 'Poppins', serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.5s ease both;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
