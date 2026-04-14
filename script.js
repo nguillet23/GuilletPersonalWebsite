@@ -6,7 +6,7 @@ const PROJECTS = [
   {
     num: "001",
     title: "XR Lacrosse Goalie Training",
-    image: null, // e.g. "Content/xr-lacrosse.jpg"
+    image: "Content/Lacrosse.png",
     tags: ["Python", "C#", "Unity", "MagicLeap", "VIVE Trackers"],
     shortDesc: "Extended-reality training system for lacrosse goalies.",
     details: `An extended-reality training system for lacrosse goalies built with Unity, MagicLeap, and VIVE Trackers. The system provides real-time spatial feedback during drills, overlaying virtual shot trajectories and scoring zones onto the physical crease.
@@ -18,7 +18,7 @@ The data pipeline (Python) streams tracker positions into the Unity scene at low
   {
     num: "002",
     title: "HOA Macros",
-    image: null, // e.g. "Content/hoa.jpg"
+    image: "Content/HOA.png",
     tags: ["Python", "HTML", "TypeScript"],
     shortDesc: "Automation tooling for HOA document processing.",
     details: `Automation tooling that drastically reduced the manual overhead of HOA document processing. Python scripts parse and extract structured data from PDFs and Word documents, feeding a lightweight TypeScript/HTML dashboard for review and export.
@@ -30,7 +30,7 @@ The workflow handles violation letters, dues statements, and meeting minutes —
   {
     num: "003",
     title: "Frisbee Valuation",
-    image: null, // e.g. "Content/frisbee.jpg"
+    image: "Content/Frisbee.png",
     tags: ["Python", "Pandas", "Statistics"],
     shortDesc: "Statistical model for evaluating ultimate frisbee players.",
     details: `A statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data. Inspired by WAR and other advanced sports metrics, the model assigns value to individual actions (completions, turnovers, goals, assists) weighted by field position and game context.
@@ -42,7 +42,7 @@ Built entirely in Python with Pandas and NumPy, with visualisation outputs for p
   {
     num: "004",
     title: "Baseball Analysis",
-    image: null, // e.g. "Content/baseball.jpg"
+    image: "Content/Baseball.png",
     tags: ["Python", "HTML", "Statcast", "Data Viz"],
     shortDesc: "Data pipeline and visualisation toolkit for MLB Statcast data.",
     details: `A data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data. Pulls from the Baseball Savant API, normalises multi-season datasets, and surfaces trends — pitch mix evolution, exit velocity distributions, spray charts — through an HTML report layer.

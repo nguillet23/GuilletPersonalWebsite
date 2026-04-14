@@ -13,9 +13,9 @@
 <nav>
   <a class="nav-logo" href="#hero">NG.</a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -53,34 +53,102 @@
   <div class="scroll-hint">Scroll to explore</div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label">01 / About</div>
-  <h2>Who I Am</h2>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>
-        I'm a <strong>computer engineer</strong> with a passion for building things that are fast, reliable, and a little bit elegant. I like working across the stack but feel most at home in the backend.
-      </p>
-      <p>
-        When I'm not writing code, I'm probably outside playing ultimate frisbee.
-      </p>
-      <p>
-        I'm currently <strong>working at a startup FishWhistle</strong>, a SouthEast fishing prediction app — feel free to reach out if you're working on something interesting.
-      </p>
-    </div>
-    <div>
-      <div class="skills-grid">
-        <div class="skills-label">Tech I work with</div>
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">TypeScript</div>
-        <div class="skill-tag">PostgreSQL</div>
-        <div class="skill-tag">Git</div>
-        <div class="skill-tag">C#</div>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">01 / Projects</div>
+  <h2>Things I've Built</h2>
+  <div class="projects-grid">
+
+    <!--
+      HOW TO ADD A PROJECT IMAGE:
+      Replace the <div class="project-img-placeholder"> block with:
+        <img src="Content/your-image.jpg" alt="Project Name" class="project-img" />
+
+      Same applies inside each modal's modal-img-placeholder.
+    -->
+
+    <!-- PROJECT 1 -->
+    <div class="project-card" data-project="0">
+      <!-- Swap with: <img src="Content/xr-lacrosse.jpg" alt="XR Lacrosse" class="project-img" /> -->
+      <img src="Content/Lacrosse.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">001</div>
+        <h3>XR Lacrosse Goalie Training</h3>
+        <p>Extended-reality training system for lacrosse goalies built with Unity, MagicLeap, and VIVE Trackers.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">MagicLeap</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="0">View Details →</button>
+          <a href="https://github.com/xrlacrosse-nova/NovaXRLacrosse" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
       </div>
     </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card" data-project="1">
+      <!-- Swap with: <img src="Content/hoa.jpg" alt="HOA Macros" class="project-img" /> -->
+      <img src="Content/HOA.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">002</div>
+        <h3>HOA Macros</h3>
+        <p>Automation tooling for HOA document processing, reducing manual data-entry overhead through scripted workflows.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">TypeScript</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="1">View Details →</button>
+          <a href="https://github.com/nguillet23/HOA" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card" data-project="2">
+      <!-- Swap with: <img src="Content/frisbee.jpg" alt="Frisbee Valuation" class="project-img" /> -->
+      <img src="Content/Frisbee.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">003</div>
+        <h3>Frisbee Valuation</h3>
+        <p>Statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="2">View Details →</button>
+          <a href="https://github.com/nguillet23/Frisbee-Valuation" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card" data-project="3">
+      <!-- Swap with: <img src="Content/baseball.jpg" alt="Baseball Analysis" class="project-img" /> -->
+      <img src="Content/Baseball.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">004</div>
+        <h3>Baseball Analysis</h3>
+        <p>Data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data, surfacing trends across seasons.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">HTML</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="3">View Details →</button>
+          <a href="https://github.com/nguillet23/Guillet-Baseball-Analysis" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+  <div class="modal" id="modalContent">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <!-- Filled by JS -->
+  </div>
+</div>
 
 <!-- EXPERIENCE -->
 <section id="experience">
@@ -130,102 +198,34 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label">03 / Projects</div>
-  <h2>Things I've Built</h2>
-  <div class="projects-grid">
-
-    <!--
-      HOW TO ADD A PROJECT IMAGE:
-      Replace the <div class="project-img-placeholder"> block with:
-        <img src="Content/your-image.jpg" alt="Project Name" class="project-img" />
-
-      Same applies inside each modal's modal-img-placeholder.
-    -->
-
-    <!-- PROJECT 1 -->
-    <div class="project-card" data-project="0">
-      <!-- Swap with: <img src="Content/xr-lacrosse.jpg" alt="XR Lacrosse" class="project-img" /> -->
-      <div class="project-img-placeholder">No image yet</div>
-      <div class="project-body">
-        <div class="project-num">001</div>
-        <h3>XR Lacrosse Goalie Training</h3>
-        <p>Extended-reality training system for lacrosse goalies built with Unity, MagicLeap, and VIVE Trackers.</p>
-        <div class="timeline-tags" style="margin-bottom:1rem;">
-          <span class="tag">Python</span><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">MagicLeap</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-link" data-project="0">View Details →</button>
-          <a href="https://github.com/xrlacrosse-nova/NovaXRLacrosse" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
-        </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">03 / About</div>
+  <h2>Who I Am</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a <strong>computer engineer</strong> with a passion for building things that are fast, reliable, and a little bit elegant. I like working across the stack but feel most at home in the backend.
+      </p>
+      <p>
+        When I'm not writing code, I'm probably outside playing ultimate frisbee.
+      </p>
+      <p>
+        I'm currently <strong>working at a startup FishWhistle</strong>, a SouthEast fishing prediction app — feel free to reach out if you're working on something interesting.
+      </p>
+    </div>
+    <div>
+      <div class="skills-grid">
+        <div class="skills-label">Tech I work with</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">TypeScript</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">C#</div>
       </div>
     </div>
-
-    <!-- PROJECT 2 -->
-    <div class="project-card" data-project="1">
-      <!-- Swap with: <img src="Content/hoa.jpg" alt="HOA Macros" class="project-img" /> -->
-      <div class="project-img-placeholder">No image yet</div>
-      <div class="project-body">
-        <div class="project-num">002</div>
-        <h3>HOA Macros</h3>
-        <p>Automation tooling for HOA document processing, reducing manual data-entry overhead through scripted workflows.</p>
-        <div class="timeline-tags" style="margin-bottom:1rem;">
-          <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">TypeScript</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-link" data-project="1">View Details →</button>
-          <a href="https://github.com/nguillet23/HOA" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="project-card" data-project="2">
-      <!-- Swap with: <img src="Content/frisbee.jpg" alt="Frisbee Valuation" class="project-img" /> -->
-      <div class="project-img-placeholder">No image yet</div>
-      <div class="project-body">
-        <div class="project-num">003</div>
-        <h3>Frisbee Valuation</h3>
-        <p>Statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data.</p>
-        <div class="timeline-tags" style="margin-bottom:1rem;">
-          <span class="tag">Python</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-link" data-project="2">View Details →</button>
-          <a href="https://github.com/nguillet23/Frisbee-Valuation" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 4 -->
-    <div class="project-card" data-project="3">
-      <!-- Swap with: <img src="Content/baseball.jpg" alt="Baseball Analysis" class="project-img" /> -->
-      <div class="project-img-placeholder">No image yet</div>
-      <div class="project-body">
-        <div class="project-num">004</div>
-        <h3>Baseball Analysis</h3>
-        <p>Data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data, surfacing trends across seasons.</p>
-        <div class="timeline-tags" style="margin-bottom:1rem;">
-          <span class="tag">Python</span><span class="tag">HTML</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-link" data-project="3">View Details →</button>
-          <a href="https://github.com/nguillet23/Guillet-Baseball-Analysis" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
-
-<!-- PROJECT MODAL -->
-<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
-  <div class="modal" id="modalContent">
-    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-    <!-- Filled by JS -->
-  </div>
-</div>
 
 <!-- CONTACT -->
 <section id="contact">
