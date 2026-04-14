@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicholas Guillet — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">NG.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-tag">Computer Engineer</div>
+  <h1><span class="dim">Nicholas Guillet</span></h1>
+  <p class="hero-desc">
+    I'm a Junior Computer Engineer at Villanova University interested in Software and Data engineering.
+  </p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 / About</div>
+  <h2>Who I Am</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a <strong>computer engineer</strong> with a passion for building things that are fast, reliable, and a little bit elegant. I like working across the stack but feel most at home in the backend.
+      </p>
+      <p>
+        When I'm not writing code, I'm probably outside playing ultimate frisbee.
+      </p>
+      <p>
+        I'm currently <strong>working at a startup FishWhistle</strong>, a SouthEast fishing prediction app — feel free to reach out if you're working on something interesting.
+      </p>
+      <br />
+      <!--
+        RESUME DOWNLOAD:
+        1. Save your resume PDF as "resume.pdf" in the same folder as index.html.
+        2. The "download" attribute tells the browser to download the file
+           instead of opening it, and sets the saved filename.
+        3. Update the filename in both href and download if you prefer a different name.
+      -->
+      <a href="resume.pdf" download="Nicholas_Guillet_Resume.pdf" class="btn btn-ghost" style="display:inline-block;">
+        Download Resume ↓
+      </a>
+    </div>
+    <div>
+      <div class="skills-grid">
+        <div class="skills-label">Tech I work with</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">TypeScript</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">C#</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">02 / Experience</div>
+  <h2>Where I've Worked</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-date">May 2026 — Present</div>
+      <div class="timeline-content">
+        <h3>Technical Intern</h3>
+        <div class="timeline-company">FishWhistle</div>
+        <p class="timeline-desc">Led backend development for a real-time data pipeline processing 10M+ events per day. Reduced API latency by 40% through caching strategies and query optimization. Mentored a team of 3 junior engineers.</p>
+        <div class="timeline-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2025 — Present</div>
+      <div class="timeline-content">
+        <h3>Villanova Math Tutor</h3>
+        <div class="timeline-company">Villanova Math Center</div>
+        <p class="timeline-desc">Provided one-on-one and group tutoring for undergraduate mathematics courses, helping students build stronger foundations in core concepts.</p>
+        <div class="timeline-tags">
+          <span class="tag">Calculus I-III</span>
+          <span class="tag">Linear Algebra</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">03 / Projects</div>
+  <h2>Things I've Built</h2>
+  <div class="projects-grid">
+
+    <a href="#" class="project-card">
+      <div class="project-num">001</div>
+      <h3>XR Lacrosse Goalie Training</h3>
+      <p>Mixed-reality training system for lacrosse goalies built with Unity and MagicLeap, providing real-time spatial feedback during drills.</p>
+      <div class="timeline-tags" style="margin-bottom:1.5rem;">
+        <span class="tag">Python</span><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">MagicLeap</span>
+      </div>
+      <div class="project-link">View Project</div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="project-num">002</div>
+      <h3>HOA Macros</h3>
+      <p>Automation tooling for HOA document processing, reducing manual data-entry overhead through scripted workflows.</p>
+      <div class="timeline-tags" style="margin-bottom:1.5rem;">
+        <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">TypeScript</span>
+      </div>
+      <div class="project-link">View Project</div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="project-num">003</div>
+      <h3>Frisbee Valuation</h3>
+      <p>Statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data.</p>
+      <div class="timeline-tags" style="margin-bottom:1.5rem;">
+        <span class="tag">Python</span>
+      </div>
+      <div class="project-link">View Project</div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="project-num">004</div>
+      <h3>Baseball Analysis</h3>
+      <p>Data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data, surfacing trends across seasons.</p>
+      <div class="timeline-tags" style="margin-bottom:1.5rem;">
+        <span class="tag">Python</span><span class="tag">HTML</span>
+      </div>
+      <div class="project-link">View Project</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">04 / Contact</div>
+  <h2>Let's Talk</h2>
+  <div class="contact-wrap">
+    <div>
+      <p class="contact-desc">
+        Whether it's a job opportunity, a collaboration, or just a good engineering conversation — my inbox is open.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:nguillet@villanova.edu" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          <div>
+            <div style="color:var(--text);font-size:0.8rem;">Email</div>
+            <div style="font-size:0.75rem;">nguillet@villanova.edu</div>
+          </div>
+        </a>
+        <a href="https://github.com/nguillet23" target="_blank" class="contact-link">
+          <div class="contact-link-icon" style="font-size:13px;font-family:var(--mono);">GH</div>
+          <div>
+            <div style="color:var(--text);font-size:0.8rem;">GitHub</div>
+            <div style="font-size:0.75rem;">github.com/nguillet23</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/nicholas-guillet/" target="_blank" class="contact-link">
+          <div class="contact-link-icon" style="font-size:13px;font-family:var(--mono);">LI</div>
+          <div>
+            <div style="color:var(--text);font-size:0.8rem;">LinkedIn</div>
+            <div style="font-size:0.75rem;">linkedin.com/in/nicholas-guillet/</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="contact-email-box">
+      <h3>Send a message</h3>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="Nick Guillet" />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="nguillet@villanova.edu" />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="What's on your mind?"></textarea>
+      </div>
+      <button class="form-submit">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 Nicholas Guillet. All rights reserved.</div>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="https://github.com/nguillet23" style="color:var(--muted);text-decoration:none;" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/nicholas-guillet/" style="color:var(--muted);text-decoration:none;" target="_blank">LinkedIn</a>
+    <a href="mailto:nguillet@villanova.edu" style="color:var(--muted);text-decoration:none;">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
