@@ -13,6 +13,7 @@ const PROJECTS = [
 
 The data pipeline (Python) streams tracker positions into the Unity scene at low latency, while C# scripts handle game-logic, scoring, and session recording. Built as a senior design project at Villanova.`,
     github: "https://github.com/xrlacrosse-nova/NovaXRLacrosse",
+    netlify: null,
     live: null,
   },
   {
@@ -25,6 +26,7 @@ The data pipeline (Python) streams tracker positions into the Unity scene at low
 
 The workflow handles violation letters, dues statements, and meeting minutes — cutting processing time from hours to minutes per batch.`,
     github: "https://github.com/nguillet23/HOA",
+    netlify: "http://hoamacro.netlify.app/",
     live: null,
   },
   {
@@ -37,6 +39,7 @@ The workflow handles violation letters, dues statements, and meeting minutes —
 
 Built entirely in Python with Pandas and NumPy, with visualisation outputs for player comparison and season-over-season trend analysis.`,
     github: "https://github.com/nguillet23/Frisbee-Valuation",
+    netlify: "http://frisbeeanalysis.netlify.app/",
     live: null,
   },
   {
@@ -49,6 +52,7 @@ Built entirely in Python with Pandas and NumPy, with visualisation outputs for p
 
 The pipeline is modular by design, making it easy to swap in new seasons or focus on specific teams and players.`,
     github: "https://github.com/nguillet23/Guillet-Baseball-Analysis",
+    netlify: "http://guilletbaseball.netlify.app/",
     live: null,
   },
 ];
@@ -74,6 +78,9 @@ function openModal(idx) {
   let linksHTML = '';
   if (p.github) {
     linksHTML += `<a href="${p.github}" target="_blank" class="btn btn-primary" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">GitHub ↗</a>`;
+  }
+  if (p.netlify) {
+    linksHTML += `<a href="${p.netlify}" target="_blank" class="btn btn-ghost" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">Netlify ↗</a>`;
   }
   if (p.live) {
     linksHTML += `<a href="${p.live}" target="_blank" class="btn btn-ghost" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">Live Demo ↗</a>`;
