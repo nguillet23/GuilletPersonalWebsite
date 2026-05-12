@@ -11,7 +11,6 @@
   --text: #f0f0f0;
   --muted: #888;
   --accent: #7cffd4;
-  --accent2: #5b8fff;
   --mono: 'DM Mono', monospace;
   --head: 'Syne', sans-serif;
   --serif: 'Playfair Display', serif;
@@ -72,12 +71,12 @@ section { padding: 7rem 4rem; max-width: 1100px; margin: 0 auto; }
   margin: 0 auto;
 }
 
-/* ── NEW HERO TAG matching screenshot style ── */
+/* ── HERO TAG ── */
 .hero-tag {
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent2);
+  color: var(--accent);
   margin-bottom: 1.75rem;
   display: inline-flex;
   align-items: center;
@@ -86,15 +85,14 @@ section { padding: 7rem 4rem; max-width: 1100px; margin: 0 auto; }
   font-family: var(--mono);
 }
 
-/* No pseudo-element line — pill style like the screenshot */
 .hero-tag-inner {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
   padding: 0.35rem 1rem;
-  border: 1px solid rgba(91,143,255,0.35);
+  border: 1px solid rgba(124,255,212,0.35);
   border-radius: 999px;
-  background: rgba(91,143,255,0.06);
+  background: rgba(124,255,212,0.06);
   letter-spacing: 0.18em;
 }
 
@@ -136,7 +134,7 @@ h1 .dim { color: var(--muted); }
   animation: fadeUp 0.5s 0.3s ease both;
 }
 
-/* ── ICON BUTTONS (like screenshot) ── */
+/* ── ICON BUTTONS ── */
 .btn-icon {
   width: 46px; height: 46px;
   border-radius: 50%;
@@ -159,7 +157,7 @@ h1 .dim { color: var(--muted); }
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
-  border-radius: 999px; /* pill shape like screenshot */
+  border-radius: 999px;
   font-family: var(--mono);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
@@ -172,12 +170,12 @@ h1 .dim { color: var(--muted); }
   gap: 0.5rem;
 }
 .btn-primary {
-  background: var(--accent2);
-  color: #fff;
+  background: var(--accent);
+  color: #0c0c0e;
   font-weight: 500;
-  border: 1px solid var(--accent2);
+  border: 1px solid var(--accent);
 }
-.btn-primary:hover { background: transparent; color: var(--accent2); border-color: var(--accent2); }
+.btn-primary:hover { background: transparent; color: var(--accent); border-color: var(--accent); }
 .btn-ghost {
   background: transparent;
   color: var(--text);
@@ -281,7 +279,7 @@ h2 {
 }
 .timeline-company {
   font-size: 0.8rem;
-  color: var(--accent2);
+  color: var(--accent);
   margin-bottom: 0.75rem;
 }
 .timeline-desc {
