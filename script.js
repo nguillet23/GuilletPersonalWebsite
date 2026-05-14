@@ -13,7 +13,7 @@ const PROJECTS = [
 
 The data pipeline (Python) streams tracker positions into the Unity scene at low latency, while C# scripts handle game-logic, scoring, and session recording. Built as a senior design project at Villanova.`,
     github: "https://github.com/xrlacrosse-nova/NovaXRLacrosse",
-    netlify: null,
+    dashboard: null,
     live: null,
   },
   {
@@ -26,7 +26,7 @@ The data pipeline (Python) streams tracker positions into the Unity scene at low
 
 The workflow handles violation letters, dues statements, and meeting minutes — cutting processing time from hours to minutes per batch.`,
     github: "https://github.com/nguillet23/HOA",
-    netlify: null,
+    dashboard: null,
     live: null,
   },
   {
@@ -39,7 +39,7 @@ The workflow handles violation letters, dues statements, and meeting minutes —
 
 Built entirely in Python with Pandas and NumPy, with visualisation outputs for player comparison and season-over-season trend analysis.`,
     github: "https://github.com/nguillet23/Frisbee-Valuation",
-    netlify: "http://frisbeeanalysis.netlify.app/",
+    dashboard: "https://nguillet23.github.io/Frisbee-Valuation/",
     live: null,
   },
   {
@@ -52,7 +52,7 @@ Built entirely in Python with Pandas and NumPy, with visualisation outputs for p
 
 The pipeline is modular by design, making it easy to swap in new seasons or focus on specific teams and players.`,
     github: "https://github.com/nguillet23/Guillet-Baseball-Analysis",
-    netlify: "http://guilletbaseball.netlify.app/",
+    dashboard: "https://nguillet23.github.io/Guillet-Baseball-Analysis/",
     live: null,
   },
 ];
@@ -79,8 +79,8 @@ function openModal(idx) {
   if (p.github) {
     linksHTML += `<a href="${p.github}" target="_blank" class="btn btn-primary" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">GitHub ↗</a>`;
   }
-  if (p.netlify) {
-    linksHTML += `<a href="${p.netlify}" target="_blank" class="btn btn-ghost" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">Netlify ↗</a>`;
+  if (p.dashboard) {
+    linksHTML += `<a href="${p.dashboard}" target="_blank" class="btn btn-ghost" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">Dashboard ↗</a>`;
   }
   if (p.live) {
     linksHTML += `<a href="${p.live}" target="_blank" class="btn btn-ghost" style="font-size:0.75rem;padding:0.6rem 1.25rem;border-radius:4px;">Live Demo ↗</a>`;
@@ -221,3 +221,23 @@ fadeEls.forEach((el) => {
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   fadeObserver.observe(el);
 });
+
+const skills = [
+  {name:"Python",     url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+  {name:"JavaScript", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+  {name:"TypeScript", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
+  {name:"Java",       url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"},
+  {name:"C#",         url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"},
+  {name:"PostgreSQL", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
+  {name:"React",      url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+  {name:"Git",        url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
+];
+
+const grid = document.getElementById('skills-grid');
+if (grid) {
+  grid.innerHTML = skills.map(s => `
+    <div class="skill-item">
+      <img src="${s.url}" alt="${s.name}" loading="lazy">
+      <span>${s.name}</span>
+    </div>`).join('');
+}
