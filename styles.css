@@ -460,21 +460,22 @@ h2 {
   gap: 2.5rem;
 }
 .project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(124,255,212,0.1), rgba(255,255,255,0.03));
+  border: 1px solid rgba(124,255,212,0.24);
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.25s;
+  transition: all 0.25s ease;
   cursor: pointer;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.24);
 }
 .project-card:hover {
   border-color: var(--accent);
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 0 0 1px var(--accent), 0 12px 40px rgba(0,0,0,0.5);
-  background: rgba(0,0,0,0.3);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 0 0 1px rgba(124,255,212,0.35), 0 16px 42px rgba(0,0,0,0.42);
+  background: linear-gradient(135deg, rgba(124,255,212,0.16), rgba(255,255,255,0.05));
 }
 
 .project-card:hover .project-img {
