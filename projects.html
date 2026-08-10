@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Nicholas Guillet</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="icon" type="image/png" href="Content/Blue_Logo.png">
+</head>
+<body>
+  
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">
+  <img src="Content/Blue_Logo.png" style="height: 40px; width: auto; display: block; mix-blend-mode: lighten;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">Projects</div>
+  <h2>Things I've Built</h2>
+  <div class="projects-grid">
+
+    <!--
+      HOW TO ADD A PROJECT IMAGE:
+      Replace the <div class="project-img-placeholder"> block with:
+        <img src="Content/your-image.jpg" alt="Project Name" class="project-img" />
+
+      Same applies inside each modal's modal-img-placeholder.
+    -->
+
+    <!-- PROJECT 1 -->
+    <div class="project-card" data-project="0">
+      <!-- Swap with: <img src="Content/xr-lacrosse.jpg" alt="XR Lacrosse" class="project-img" /> -->
+      <img src="Content/Lacrosse.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">001</div>
+        <h3>XR Lacrosse Goalie Training</h3>
+        <p>Extended-reality training system for lacrosse goalies built with Unity, MagicLeap, and VIVE Trackers.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">C#</span><span class="tag">Unity</span><span class="tag">MagicLeap</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="0">View Details →</button>
+          <a href="https://github.com/xrlacrosse-nova/NovaXRLacrosse" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card" data-project="1">
+      <!-- Swap with: <img src="Content/hoa.jpg" alt="HOA Macros" class="project-img" /> -->
+      <img src="Content/HOA.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">002</div>
+        <h3>HOA Macros</h3>
+        <p>Automation tooling for HOA document processing, reducing manual data-entry overhead through scripted workflows.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">TypeScript</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="1">View Details →</button>
+          <a href="https://github.com/nguillet23/HOA" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card" data-project="2">
+      <!-- Swap with: <img src="Content/frisbee.jpg" alt="Frisbee Valuation" class="project-img" /> -->
+      <img src="Content/Frisbee.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">003</div>
+        <h3>Frisbee Evaluation</h3>
+        <p>Statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">HTML</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="2">View Details →</button>
+          <a href="https://github.com/nguillet23/Frisbee-Valuation" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+          <a href="https://nguillet23.github.io/Frisbee-Valuation/" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">Dashboard ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card" data-project="3">
+      <!-- Swap with: <img src="Content/baseball.jpg" alt="Baseball Analysis" class="project-img" /> -->
+      <img src="Content/Baseball.png" alt="Project Name" class="project-img" />
+      <div class="project-body">
+        <div class="project-num">004</div>
+        <h3>Baseball Analysis</h3>
+        <p>Data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data, surfacing trends across seasons.</p>
+        <div class="timeline-tags" style="margin-bottom:1rem;">
+          <span class="tag">Python</span><span class="tag">HTML</span>
+        </div>
+        <div class="project-actions">
+          <button class="project-link" data-project="3">View Details →</button>
+          <a href="https://github.com/nguillet23/Guillet-Baseball-Analysis" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">GitHub ↗</a>
+          <a href="https://nguillet23.github.io/Guillet-Baseball-Analysis/" target="_blank" class="project-link-gh" onclick="event.stopPropagation()">Dashboard ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+  <div class="modal" id="modalContent">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <!-- Filled by JS -->
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 Nicholas Guillet. All rights reserved.</div>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="https://github.com/nguillet23" style="color:var(--muted);text-decoration:none;" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/nicholas-guillet/" style="color:var(--muted);text-decoration:none;" target="_blank">LinkedIn</a>
+    <a href="mailto:nguillet@villanova.edu" style="color:var(--muted);text-decoration:none;">Email</a>
+  </div>
+</footer>
+
+<script src="js/projects.js"></script>
+</body>
+</html>
