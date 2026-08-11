@@ -3,11 +3,13 @@
 .exp-edu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  max-width: 100%;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
-  padding: 4rem 4rem;
+  padding: 4rem 0;
 }
+
 
 .exp-edu-col {
   display: flex;
@@ -67,11 +69,26 @@
 }
 
 .timeline-content {
+  position: relative;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Company / school logo */
+.timeline-photo {
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,0.10);
 }
 
 .timeline-item:hover .timeline-content {
@@ -108,6 +125,17 @@
   font-size: 0.9rem;
   color: var(--muted);
   margin-bottom: 0.75rem;
+  padding-right: 4.5rem;
+}
+
+.timeline-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin-top: -0.35rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+  padding-right: 4.5rem;
 }
 
 .timeline-desc {
@@ -115,12 +143,14 @@
   color: var(--muted);
   line-height: 1.7;
   margin-bottom: 0.75rem;
+  padding-right: 4.5rem;
 }
 
 .timeline-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  padding-right: 4.5rem;
 }
 
 .tag {
