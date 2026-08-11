@@ -1,4 +1,7 @@
 /* ─── EXPERIENCE ─────────────────────────────────────────────────────────────── */
+#experience { 
+  padding: 7rem 4rem 1.5rem; 
+}
 
 .exp-edu-grid {
   display: grid;
@@ -7,9 +10,8 @@
   width: 100%;
   max-width: none;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 0;
 }
-
 
 .exp-edu-col {
   display: flex;
