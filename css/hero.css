@@ -1,12 +1,19 @@
 /* ─── HERO ───────────────────────────────────────────────────────────────────── */
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 
 #hero {
-  min-height: 100vh;
+  height: 90;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 8rem;
-  padding-left: 0rem;
+  padding-left: 0;
   padding-right: 0;
   max-width: 1100px;
   margin: 0 auto;
