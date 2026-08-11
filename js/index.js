@@ -7,7 +7,6 @@ const skills = [
   {name:"Java",       url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"},
   {name:"C#",         url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"},
   {name:"PostgreSQL", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
-  {name:"React",      url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
   {name:"Git",        url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
 ];
 
