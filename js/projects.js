@@ -136,27 +136,6 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
 
-// ─── CONTACT FORM ────────────────────────────────────────────────────────────
-
-document.querySelector('.form-submit').addEventListener('click', function () {
-  const name    = document.querySelector('input[type="text"]').value.trim();
-  const email   = document.querySelector('input[type="email"]').value.trim();
-  const message = document.querySelector('textarea').value.trim();
-
-  if (!name || !email || !message) {
-    showToast('Please fill out all fields.', true);
-    return;
-  }
-
-  // Replace with Formspree / EmailJS when ready
-  console.log('Form submitted:', { name, email, message });
-  showToast("Message sent! I'll be in touch soon.");
-
-  document.querySelector('input[type="text"]').value  = '';
-  document.querySelector('input[type="email"]').value = '';
-  document.querySelector('textarea').value            = '';
-});
-
 // ─── TOAST HELPER ────────────────────────────────────────────────────────────
 
 function showToast(msg, isError = false) {
@@ -221,23 +200,3 @@ fadeEls.forEach((el) => {
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   fadeObserver.observe(el);
 });
-
-const skills = [
-  {name:"Python",     url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
-  {name:"JavaScript", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
-  {name:"TypeScript", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
-  {name:"Java",       url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"},
-  {name:"C#",         url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"},
-  {name:"PostgreSQL", url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
-  {name:"React",      url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
-  {name:"Git",        url:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
-];
-
-const grid = document.getElementById('skills-grid');
-if (grid) {
-  grid.innerHTML = skills.map(s => `
-    <div class="skill-item">
-      <img src="${s.url}" alt="${s.name}" loading="lazy">
-      <span>${s.name}</span>
-    </div>`).join('');
-}

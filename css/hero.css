@@ -1,0 +1,165 @@
+/* ─── HERO ───────────────────────────────────────────────────────────────────── */
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+
+#hero {
+  height: 90;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  animation: fadeUp 0.5s ease both;
+  font-family: var(--mono);
+}
+
+.hero-tag-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(124,255,212,0.35);
+  border-radius: 999px;
+  background: rgba(124,255,212,0.06);
+  letter-spacing: 0.18em;
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(3.5rem, 11vw, 7.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -2px;
+  margin-bottom: 1.75rem;
+  color: var(--text);
+  animation: fadeUp 0.5s 0.1s ease both;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  animation: fadeUp 0.5s 0.2s ease both;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  animation: fadeUp 0.5s 0.3s ease both;
+}
+
+.hero-btns .btn {
+  padding: 1.2rem 2.5rem;
+  font-size: 1rem;
+}
+
+.hero-btns .btn-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 1.3rem;
+}
+
+.hero-btns .btn-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--muted);
+  margin-left: -2rem;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hero-contact {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.scroll-hint {
+  margin-top: 5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: fadeUp 0.5s 0.4s ease both;
+}
+
+.scroll-hint::after {
+  content: '';
+  display: inline-block;
+  width: 3rem;
+  height: 1px;
+  background: var(--border-hover);
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  #hero { 
+    padding: 7rem 1.5rem 4rem; 
+  }
+  
+  .hero-photo {
+    width: 350px;
+    height: 350px;
+    margin-left: 0;
+  }
+  
+  .hero-contact {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
