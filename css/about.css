@@ -5,11 +5,6 @@ body {
   overflow: hidden;
 }
 
-.nav-links li {
-  display: flex;
-  align-items: center;
-}
-
 #about {
   min-height: auto;
   display: flex;

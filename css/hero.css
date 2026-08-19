@@ -71,6 +71,22 @@ body {
   animation: fadeUp 0.5s 0.3s ease both;
 }
 
+.hero-btns .btn {
+  padding: 1.2rem 2.5rem;
+  font-size: 1rem;
+}
+
+.hero-btns .btn-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 1.3rem;
+}
+
+.hero-btns .btn-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
 .hero-content {
   display: flex;
   flex-direction: row;
