@@ -5,12 +5,17 @@ body {
   overflow: hidden;
 }
 
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
 #about {
   min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
   padding-bottom: 1.5rem;
   padding-left: 0;
   padding-right: 0;
@@ -177,8 +182,8 @@ body {
 /* ─── RESPONSIVE ─────────────────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
-  #about { 
-    padding: 7rem 1.5rem 4rem; 
+  #about {
+    padding: 4rem 1.5rem 4rem;
   }
 
   .about-grid { 
