@@ -1,3 +1,4 @@
+import { useCallback, useEffect, useState } from "react";
 import type { Project } from "../types/project";
 
 interface UseProjectModalResult {
@@ -11,6 +12,25 @@ interface UseProjectModalResult {
  * from js/projects.js.
  */
 export function useProjectModal(): UseProjectModalResult {
-  // TODO: useState<Project | null>, escape-key listener, body-scroll-lock
-  throw new Error("not implemented");
+  const [selected, setSelected] = useState<Project | null>(null);
+
+  const open = useCallback((project: Project) => setSelected(project), []);
+  const close = useCallback(() => setSelected(null), []);
+
+  useEffect(() => {
+    if (!selected) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [selected, close]);
+
+  return { selected, open, close };
 }

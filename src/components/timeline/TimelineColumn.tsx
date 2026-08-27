@@ -1,5 +1,6 @@
 import type { TimelineItem as TimelineItemData } from "../../types/timeline";
 import { TimelineItem } from "./TimelineItem";
+import styles from "./Timeline.module.css";
 
 interface TimelineColumnProps {
   title: string;
@@ -7,6 +8,14 @@ interface TimelineColumnProps {
 }
 
 export function TimelineColumn({ title, items }: TimelineColumnProps) {
-  // TODO: render title + items.map(item => <TimelineItem item={item} />)
-  return null;
+  return (
+    <div className={styles.column}>
+      <h2 className={styles.columnTitle}>{title}</h2>
+      <div className={styles.timeline}>
+        {items.map((item) => (
+          <TimelineItem key={item.id} item={item} />
+        ))}
+      </div>
+    </div>
+  );
 }

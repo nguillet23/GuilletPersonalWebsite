@@ -1,8 +1,9 @@
+import styles from "./Tag.module.css";
+
 interface TagProps {
   label: string;
 }
 
 export function Tag({ label }: TagProps) {
-  // TODO: render a single pill, mirroring .tag
-  return null;
+  return <span className={styles.tag}>{label}</span>;
 }
