@@ -1,0 +1,14 @@
+/* Ported verbatim from css/common.css :root */
+:root {
+  --bg: #0c0c0e;
+  --surface: #141417;
+  --surface2: #1c1c21;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --text: #f0f0f0;
+  --muted: #888;
+  --accent: #7cffd4;
+  --mono: "DM Mono", monospace;
+  --head: "Syne", sans-serif;
+  --serif: "Playfair Display", serif;
+}
