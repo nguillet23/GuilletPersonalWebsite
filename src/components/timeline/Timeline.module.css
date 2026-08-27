@@ -49,10 +49,17 @@
   transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.item:hover .dot {
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 8px var(--accent), 0 0 20px var(--accent);
+@media (hover: hover) and (pointer: fine) {
+  .item:hover .dot {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent), 0 0 20px var(--accent);
+  }
+
+  .item:hover .content {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
 }
 
 .content {
@@ -62,11 +69,6 @@
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   transition: border-color 0.3s ease, background 0.3s ease;
-}
-
-.item:hover .content {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .logo {

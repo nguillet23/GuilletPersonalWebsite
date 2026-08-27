@@ -20,8 +20,10 @@
   text-decoration: none;
 }
 
-.links a:hover {
-  color: var(--accent);
+@media (hover: hover) and (pointer: fine) {
+  .links a:hover {
+    color: var(--accent);
+  }
 }
 
 @media (max-width: 768px) {

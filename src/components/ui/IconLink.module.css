@@ -19,7 +19,9 @@
   height: 25px;
 }
 
-.iconLink:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+@media (hover: hover) and (pointer: fine) {
+  .iconLink:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
 }
