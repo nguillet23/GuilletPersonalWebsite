@@ -21,18 +21,20 @@
   border-color: var(--accent);
 }
 
-.primary:hover {
-  background: transparent;
-  color: var(--accent);
-}
-
 .ghost {
   background: transparent;
   color: var(--text);
   border-color: var(--border-hover);
 }
 
-.ghost:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background: transparent;
+    color: var(--accent);
+  }
+
+  .ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
 }

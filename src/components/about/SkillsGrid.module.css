@@ -33,13 +33,15 @@
   text-align: center;
 }
 
-.grid:has(.item:hover) .item {
-  opacity: 0.4;
-  transform: scale(0.88);
-}
+@media (hover: hover) and (pointer: fine) {
+  .grid:has(.item:hover) .item {
+    opacity: 0.4;
+    transform: scale(0.88);
+  }
 
-.grid:has(.item:hover) .item:hover {
-  opacity: 1;
-  transform: scale(1.3);
-  background: rgba(255, 255, 255, 0.05);
+  .grid:has(.item:hover) .item:hover {
+    opacity: 1;
+    transform: scale(1.3);
+    background: rgba(255, 255, 255, 0.05);
+  }
 }
