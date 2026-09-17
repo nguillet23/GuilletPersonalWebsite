@@ -43,4 +43,16 @@ export const projects: Project[] = [
     github: "https://github.com/nguillet23/Guillet-Baseball-Analysis",
     dashboard: "https://nguillet23.github.io/Guillet-Baseball-Analysis/",
   },
+  {
+    num: "005",
+    title: "Mario Kart ELO",
+    image: "/Content/MarioKartELO.jpg",
+    tags: ["React", "TypeScript", "Vite", "Supabase"],
+    shortDesc:
+      "A friend-group Mario Kart Grand Prix tracker with a chess-style Elo rating per player.",
+    details:
+      "A friend-group Mario Kart Grand Prix tracker with a chess-style Elo rating per player. Grand Prix results feed automatic rating calculations, with rating floor constraints and stale-rating guards to keep the data consistent.\n\nBuilt with React, TypeScript, and Vite on the frontend with a Supabase (Postgres) backend for real-time leaderboard updates. Includes a leaderboard, head-to-head matchup comparisons, an analytics dashboard with player profiles, streak and rival tracking, and shareable PNG result cards — all password-gated for write operations and deployed to GitHub Pages via CI/CD.",
+    github: "https://github.com/nguillet23/MarioKartELO",
+    dashboard: "https://nguillet23.github.io/MarioKartELO/",
+  },
 ];

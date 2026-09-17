@@ -15,15 +15,15 @@ export function Hero() {
         <div className={styles.text}>
           <h1 className={styles.name}>Nicholas Guillet</h1>
           <p className={styles.desc}>
-            Rising Senior Computer Engineer at Villanova University interested in Software and
-            Data Engineering.
-          </p>
-          <p className={styles.desc}>
-            Post-Graduation, I plan on pursuing a Master of Science in Sports Performance
-            Engineering at Villanova University.
+            Senior Computer Engineer at Villanova University interested in Software and Data
+            Engineering.
           </p>
           <div className={styles.btns}>
-            <Button as="a" href={asset("/Content/Guillet_Resume.pdf")} download="Guillet_Resume.pdf">
+            <Button
+              as="a"
+              href={asset("/Content/Guillet_Resume.pdf")}
+              download="Guillet_Resume.pdf"
+            >
               ↓ Resume
             </Button>
             {socialLinks.map((link) => (

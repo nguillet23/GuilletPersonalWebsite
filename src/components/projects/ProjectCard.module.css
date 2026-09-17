@@ -15,7 +15,9 @@
   .card:hover {
     border-color: var(--accent);
     transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 0 0 1px rgba(124, 255, 212, 0.35), 0 16px 42px rgba(0, 0, 0, 0.42);
+    box-shadow:
+      0 0 0 1px rgba(124, 255, 212, 0.35),
+      0 16px 42px rgba(0, 0, 0, 0.42);
     background: linear-gradient(135deg, rgba(124, 255, 212, 0.16), rgba(255, 255, 255, 0.05));
   }
 

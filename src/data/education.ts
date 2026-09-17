@@ -2,24 +2,13 @@ import type { TimelineItem } from "../types/timeline";
 
 export const education: TimelineItem[] = [
   {
-    id: "villanova-ms",
-    title: "Villanova University",
-    org: "M.S. Sports and Performance Engineering",
-    orgLogo: "/Content/villanova.png",
-    date: "Expected 2028",
-    tags: ["Graduate School"],
-  },
-  {
     id: "villanova-bs",
     title: "Villanova University",
     org: "B.S. Computer Engineering",
     orgLogo: "/Content/villanova.png",
     location: "Tech GPA: 3.9/4.0",
     date: "Expected 2027",
-    bullets: [
-      "Dean's List: All Semesters",
-      "Minors: Computer Science, Mathematics, Business",
-    ],
+    bullets: ["Dean's List: All Semesters", "Minors: Computer Science, Mathematics, Business"],
     tags: ["Dean's List", "Computer Engineering"],
   },
   {
