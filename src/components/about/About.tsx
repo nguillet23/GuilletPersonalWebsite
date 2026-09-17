@@ -21,13 +21,14 @@ export function About() {
             <strong>Selection, Development, Performance.</strong>
           </p>
           <p>
-            Currently, I am a student at <strong>Villanova University</strong>, where I am on
-            track to receive my Bachelor's of Science in Computer Engineering in the Spring of
-            2027 with minors in Computer Science, Business, and Mathematics.
+            Currently, I am a student at <strong>Villanova University</strong>, where I am on track
+            to receive my Bachelor's of Science in Computer Engineering in the Spring of 2027 with
+            minors in Computer Science, Business, and Mathematics.
           </p>
           <p>
-            During the summer of 2026, I was a <strong>Data Science Intern at Construct Connect</strong>,
-            under the mentorship of Senior Data Scientist, <strong>Roshan Darji</strong>.
+            During the summer of 2026, I was a{" "}
+            <strong>Data Science Intern at Construct Connect</strong>, under the mentorship of
+            Senior Data Scientist, <strong>Roshan Darji</strong>.
           </p>
           <p>
             When I'm not engineering, I'm likely outside playing <strong>Ultimate Frisbee</strong>{" "}

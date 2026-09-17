@@ -16,7 +16,10 @@
   padding: 16px 12px;
   border-radius: 12px;
   cursor: default;
-  transition: transform 0.25s ease, opacity 0.25s ease, background 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    background 0.2s ease;
   width: 130px;
   flex-shrink: 0;
 }

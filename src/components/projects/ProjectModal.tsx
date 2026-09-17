@@ -43,12 +43,24 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           ))}
           <div className={styles.links}>
             {project.github && (
-              <Button as="a" variant="primary" href={project.github} target="_blank" rel="noreferrer">
+              <Button
+                as="a"
+                variant="primary"
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub ↗
               </Button>
             )}
             {project.dashboard && (
-              <Button as="a" variant="ghost" href={project.dashboard} target="_blank" rel="noreferrer">
+              <Button
+                as="a"
+                variant="ghost"
+                href={project.dashboard}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Dashboard ↗
               </Button>
             )}
