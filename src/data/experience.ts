@@ -2,6 +2,18 @@ import type { TimelineItem } from "../types/timeline";
 
 export const experience: TimelineItem[] = [
   {
+    id: "villanova-soccer-statistician",
+    title: "Team Statistician",
+    org: "Villanova Men's Soccer",
+    orgLogo: "/Content/villanova.png",
+    location: "Villanova, PA",
+    date: "August 2026 — Present",
+    bullets: [
+      "Built dashboards to track player and match performance metrics for the coaching staff.",
+    ],
+    tags: ["Data Analysis", "Dashboards"],
+  },
+  {
     id: "construct-connect",
     title: "Data Science Intern",
     org: "Construct Connect",
