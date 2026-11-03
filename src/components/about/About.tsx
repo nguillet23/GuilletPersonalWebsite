@@ -17,19 +17,20 @@ export function About() {
         </div>
         <div className={styles.text}>
           <p>
-            I'm a <strong>Computer Engineering</strong> student focused on{" "}
-            <strong>software and data engineering</strong>. I build data pipelines, machine-learning
-            models, and full-stack web apps that people use every week.
+            I'm a <strong>Computer Engineering</strong> student who builds{" "}
+            <strong>machine-learning models, data pipelines, and AI workflows</strong> that connect
+            engineers, business teams, and customers. My goal is to become a technical leader on
+            Agile teams that own systems end to end.
           </p>
           <p>
-            Currently, I am a student at <strong>Villanova University</strong>, where I am on track
-            to receive my Bachelor's of Science in Computer Engineering in the Spring of 2027 with
-            minors in Computer Science, Business, and Mathematics.
+            I'm on track to receive my Bachelor of Science in Computer Engineering from{" "}
+            <strong>Villanova University</strong> in May 2027, with minors in Mathematics, Computer
+            Science, and Business.
           </p>
           <p>
             During the summer of 2026, I was a{" "}
-            <strong>Software Engineer Intern at ConstructConnect</strong>, under the mentorship of
-            Senior Data Scientist, <strong>Roshan Darji</strong>.
+            <strong>Software Engineer Intern at ConstructConnect</strong>, where I improved an NLP
+            model's precision and recall by over 20%.
           </p>
           <p>
             When I'm not engineering, I'm likely outside playing <strong>Ultimate Frisbee</strong>{" "}

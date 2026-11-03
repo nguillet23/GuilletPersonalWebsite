@@ -15,8 +15,8 @@ export function Hero() {
         <div className={styles.text}>
           <h1 className={styles.name}>Nicholas Guillet</h1>
           <p className={styles.desc}>
-            Computer Engineering senior at Villanova University focused on software and data
-            engineering.
+            Computer Engineering senior at Villanova University building machine-learning models,
+            data pipelines, and AI workflows. Open to relocation.
           </p>
           <div className={styles.btns}>
             <Button
