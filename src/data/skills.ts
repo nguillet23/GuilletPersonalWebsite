@@ -59,8 +59,15 @@ export const skills: Skill[] = [
 
 /** Named in a line under the icon grid rather than given an icon each. */
 export const alsoWorkWith: string[] = [
+  "SQL",
   "pandas",
+  "NumPy",
   "scikit-learn",
+  "NLP",
   "LLM APIs (Anthropic, OpenAI)",
   "RAG",
+  "pgvector",
+  "Vertex AI",
+  "Airflow",
+  "Tableau",
 ];
