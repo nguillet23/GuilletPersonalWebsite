@@ -11,7 +11,12 @@ export function SkillsGrid({ skills = defaultSkills }: SkillsGridProps) {
     <div className={styles.grid}>
       {skills.map((skill) => (
         <div className={styles.item} key={skill.name}>
-          <img src={skill.iconUrl} alt={skill.name} loading="lazy" />
+          <img
+            src={skill.iconUrl}
+            alt={skill.name}
+            loading="lazy"
+            className={skill.invert ? styles.inverted : undefined}
+          />
           <span>{skill.name}</span>
         </div>
       ))}
