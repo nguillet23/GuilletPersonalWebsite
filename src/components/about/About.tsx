@@ -1,4 +1,5 @@
 import { SkillsGrid } from "./SkillsGrid";
+import { alsoWorkWith } from "../../data/skills";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import { asset } from "../../lib/asset";
 import styles from "./About.module.css";
@@ -39,6 +40,7 @@ export function About() {
       <div className={styles.skillsWrapper}>
         <p className={styles.skillsLabel}>Tech I work with</p>
         <SkillsGrid />
+        <p className={styles.alsoWorkWith}>Also: {alsoWorkWith.join(" · ")}</p>
       </div>
     </section>
   );

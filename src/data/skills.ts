@@ -56,3 +56,11 @@ export const skills: Skill[] = [
     iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
 ];
+
+/** Named in a line under the icon grid rather than given an icon each. */
+export const alsoWorkWith: string[] = [
+  "pandas",
+  "scikit-learn",
+  "LLM APIs (Anthropic, OpenAI)",
+  "RAG",
+];
