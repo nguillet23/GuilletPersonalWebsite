@@ -1,4 +1,5 @@
 import { socialLinks } from "../../data/social-links";
+import { isExternalLink } from "../../types/nav";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -10,8 +11,9 @@ export function Footer() {
           <a
             key={link.label}
             href={link.href}
-            target={link.icon === "email" ? undefined : "_blank"}
-            rel={link.icon === "email" ? undefined : "noreferrer"}
+            title={link.detail}
+            target={isExternalLink(link) ? "_blank" : undefined}
+            rel={isExternalLink(link) ? "noreferrer" : undefined}
           >
             {link.label}
           </a>
