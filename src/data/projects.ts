@@ -37,10 +37,10 @@ export const projects: Project[] = [
     num: "004",
     title: "Baseball Analysis",
     image: "/Content/Baseball.png",
-    tags: ["Python", "HTML", "Statcast", "Data Viz"],
-    shortDesc: "Data pipeline and visualisation toolkit for MLB Statcast data.",
+    tags: ["Python", "Linear Regression", "Statcast", "Data Viz"],
+    shortDesc: "Predictive models and visualizations built on 3,000+ MLB seasons of data.",
     details:
-      "A data pipeline and visualisation toolkit for aggregating and exploring MLB Statcast data. Pulls from the Baseball Savant API, normalises multi-season datasets, and surfaces trends — pitch mix evolution, exit velocity distributions, spray charts — through an HTML report layer.\n\nThe pipeline is modular by design, making it easy to swap in new seasons or focus on specific teams and players.",
+      "Predictive models built with linear regression and feature selection across 3,000+ MLB seasons and 500+ players, supporting data-driven investment analysis for $100M+ decisions.\n\nA Python pipeline pulls MLB Statcast data from the Baseball Savant API, normalizes multi-season datasets, and surfaces trends (pitch mix evolution, exit velocity distributions, spray charts) through an HTML report published online for non-technical readers.",
     github: "https://github.com/nguillet23/Guillet-Baseball-Analysis",
     dashboard: "https://nguillet23.github.io/Guillet-Baseball-Analysis/",
   },
