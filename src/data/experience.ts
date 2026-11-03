@@ -48,8 +48,8 @@ export const experience: TimelineItem[] = [
     location: "Villanova, PA",
     date: "June 2025 — Present",
     bullets: [
-      "Tutored 20+ students across 4 courses (Accounting, Finance, Calculus, Linear Algebra), breaking down problem sets into step-by-step walkthroughs.",
+      "Tutored 30+ students in Calculus, Linear Algebra, and Differential Equations, breaking down the math in step-by-step walkthroughs.",
     ],
-    tags: ["Calculus", "Linear Algebra", "Accounting", "Finance"],
+    tags: ["Calculus", "Linear Algebra", "Differential Equations"],
   },
 ];
