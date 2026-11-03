@@ -55,4 +55,16 @@ export const projects: Project[] = [
     github: "https://github.com/nguillet23/MarioKartELO",
     dashboard: "https://nguillet23.github.io/MarioKartELO/",
   },
+  {
+    num: "006",
+    title: "Huck It",
+    image: "/Content/HuckIt.png",
+    tags: ["TypeScript", "React", "Canvas", "Vitest", "Game Dev"],
+    shortDesc:
+      "A top-down browser game that teaches new ultimate frisbee players how to play offense.",
+    details:
+      "A 2D, top-down browser game that teaches brand-new ultimate frisbee players how to play offense against a CPU person-to-person defense. From above, players can see what's hard to see from the sideline: spacing, open lanes, the force, and how cuts create space.\n\nThe game logic is a pure TypeScript simulation (field, possessions, stall count, defense, lineups) kept separate from rendering and covered by Vitest unit tests; the canvas drawing is hand-built, with React for screens and menus. The live field preview already runs a full possession: throw to teammates or open space while the marker counts the stall and applies the force. In development: AI vertical-stack cutters, leading passes, cuts you call by dragging a player, stats, coach tips, and slow-motion turnover replays, with guided lessons and a play whiteboard to follow. Every push runs lint, tests and the build in GitHub Actions before deploying to GitHub Pages.",
+    github: "https://github.com/nguillet23/huckit",
+    live: "https://nguillet23.github.io/huckit/",
+  },
 ];
