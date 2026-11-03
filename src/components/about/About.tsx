@@ -27,7 +27,7 @@ export function About() {
           </p>
           <p>
             During the summer of 2026, I was a{" "}
-            <strong>Data Science Intern at Construct Connect</strong>, under the mentorship of
+            <strong>Software Engineer Intern at ConstructConnect</strong>, under the mentorship of
             Senior Data Scientist, <strong>Roshan Darji</strong>.
           </p>
           <p>
