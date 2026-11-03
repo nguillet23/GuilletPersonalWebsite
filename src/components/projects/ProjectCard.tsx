@@ -1,7 +1,7 @@
 import type { Project } from "../../types/project";
 import { Tag } from "../ui/Tag";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
-import { asset } from "../../lib/asset";
+import { ProjectImage } from "./ProjectImage";
 import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
@@ -23,7 +23,7 @@ export function ProjectCard({ project, onSelect }: ProjectCardProps) {
         if (e.key === "Enter" || e.key === " ") onSelect(project);
       }}
     >
-      <img src={asset(project.image)} alt={project.title} className={styles.image} />
+      <ProjectImage project={project} className={styles.image} />
       <div className={styles.body}>
         <div className={styles.num}>{project.num}</div>
         <h3>{project.title}</h3>

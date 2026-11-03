@@ -1,7 +1,7 @@
 import type { Project } from "../../types/project";
 import { Tag } from "../ui/Tag";
 import { Button } from "../ui/Button";
-import { asset } from "../../lib/asset";
+import { ProjectImage } from "./ProjectImage";
 import styles from "./ProjectModal.module.css";
 
 interface ProjectModalProps {
@@ -27,7 +27,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         <button className={styles.close} aria-label="Close" onClick={onClose}>
           ✕
         </button>
-        <img className={styles.image} src={asset(project.image)} alt={project.title} />
+        <ProjectImage project={project} className={styles.image} />
         <div className={styles.body}>
           <div className={styles.num}>{project.num}</div>
           <div className={styles.title}>{project.title}</div>
