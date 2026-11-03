@@ -20,8 +20,10 @@ export function ProjectImage({ project, className }: ProjectImageProps) {
       role="img"
       aria-label={`${project.title}: private project, no image`}
     >
-      <span className={styles.num}>{project.num}</span>
-      <span className={styles.label}>Private project</span>
+      <div className={styles.inner}>
+        <span className={styles.num}>{project.num}</span>
+        <span className={styles.label}>Private project</span>
+      </div>
     </div>
   );
 }

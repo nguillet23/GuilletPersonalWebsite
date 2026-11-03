@@ -1,14 +1,19 @@
 .placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
   background-color: var(--surface2);
   background-image:
     linear-gradient(rgba(124, 255, 212, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(124, 255, 212, 0.06) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+.inner {
+  /* The parent's sizing class (e.g. display: block) can't affect this layout. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 100%;
 }
 
 .num {
