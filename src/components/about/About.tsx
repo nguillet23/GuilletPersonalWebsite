@@ -18,9 +18,9 @@ export function About() {
         <div className={styles.text}>
           <p>
             I'm a <strong>Computer Engineering</strong> student who builds{" "}
-            <strong>machine-learning models, data pipelines, and AI workflows</strong> that connect
-            engineers, business teams, and customers. My goal is to become a technical leader on
-            Agile teams that own systems end to end.
+            <strong>software, machine-learning models, data pipelines, and AI workflows</strong>{" "}
+            that connect engineers, business teams, and customers. My goal is to become a technical
+            leader on Agile teams that own systems end to end.
           </p>
           <p>
             I'm on track to receive my Bachelor of Science in Computer Engineering from{" "}
