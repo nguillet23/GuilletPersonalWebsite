@@ -32,7 +32,7 @@ export function About() {
           </p>
           <p>
             When I'm not engineering, I'm likely outside playing <strong>Ultimate Frisbee</strong>{" "}
-            at Villanova, where I am a <strong>Captain</strong> for Main Line Ultimate.
+            at Villanova, where I am a <strong>Captain</strong> for Villanova Club Ultimate Frisbee.
           </p>
         </div>
       </div>
