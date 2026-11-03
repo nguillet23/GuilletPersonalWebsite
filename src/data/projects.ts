@@ -13,12 +13,13 @@ export const projects: Project[] = [
   },
   {
     num: "002",
-    title: "HOA Macros",
+    title: "HOA Budget Processor",
     image: "/Content/HOA.png",
-    tags: ["Python", "HTML", "TypeScript"],
-    shortDesc: "Automation tooling for HOA document processing.",
+    tags: ["Python", "Flask", "pandas", "ETL"],
+    shortDesc:
+      "A Flask-backed ETL tool that automates budget data merging at HomeOwners Advantage.",
     details:
-      "Automation tooling that drastically reduced the manual overhead of HOA document processing. Python scripts parse and extract structured data from PDFs and Word documents, feeding a lightweight TypeScript/HTML dashboard for review and export.\n\nThe workflow handles violation letters, dues statements, and meeting minutes — cutting processing time from hours to minutes per batch.",
+      "A Flask-backed Python ETL pipeline I deployed at HomeOwners Advantage so the business team could merge budget data on their own, saving thousands of hours of manual merging. It consolidates 5+ disparate data sources, including association exports and budget workbooks, into one analytics-ready workflow.\n\nThe team runs it from a local browser interface: pick the input files, press run, and the app processes each association's budget with pandas and writes the results back to Excel through openpyxl and xlwings.",
     github: "https://github.com/nguillet23/HOA",
   },
   {
