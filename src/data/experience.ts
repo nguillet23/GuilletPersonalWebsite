@@ -9,8 +9,8 @@ export const experience: TimelineItem[] = [
     location: "Villanova, PA",
     date: "August 2026 — Present",
     bullets: [
-      "Built and deployed a full-stack player performance platform (React, TypeScript, PostgreSQL) used by the coaching staff to grade 20+ players each match against position-specific standards.",
-      "Engineered a client-side Wyscout PDF ingestion pipeline and secured the app with Clerk authentication and PostgreSQL Row Level Security, enforcing role-based access for 30+ users.",
+      "Saved the coaching staff 10 hours a week by deploying a custom player performance platform (React, TypeScript, PostgreSQL, Clerk auth), built with Claude Code, that assesses the in-game performance of 25+ players.",
+      "Gave the team a grading system built on 40+ coach-set standards, fed by a client-side Wyscout PDF pipeline that turns match reports into structured player data and visualizations.",
     ],
     tags: ["React", "TypeScript", "PostgreSQL", "Clerk"],
   },
@@ -22,8 +22,8 @@ export const experience: TimelineItem[] = [
     location: "Atlanta, GA",
     date: "June 2026 — July 2026",
     bullets: [
-      "Engineered a synthetic data pipeline with feature extraction and statistical optimization, improving a Named Entity Recognition (NLP) model's recall and precision on construction specification documents by over 20%.",
-      "Sped up an SFTP process by over 400% through parallelization, while improving validation accuracy.",
+      "Improved recall and precision for a Named Entity Recognition (NLP) model by over 20% by engineering a synthetic data pipeline with feature extraction and statistical optimization on construction specification documents.",
+      "Sped up a monthly SFTP data-ingestion workflow by 400% by parallelizing across multiple client servers and files at once.",
     ],
     tags: ["Python", "NLP", "Synthetic Data"],
   },
@@ -35,8 +35,7 @@ export const experience: TimelineItem[] = [
     location: "Villanova, PA",
     date: "June 2025 — Present",
     bullets: [
-      "Tutored 20+ students across 4 courses (Accounting, Finance, Calculus, Linear Algebra) using data-driven problem solving.",
-      "Turned abstract Calculus and Linear Algebra concepts into step-by-step walkthroughs across 15+ months of tutoring.",
+      "Tutored 20+ students across 4 courses (Accounting, Finance, Calculus, Linear Algebra), turning the math behind machine learning into step-by-step walkthroughs.",
     ],
     tags: ["Calculus", "Linear Algebra", "Accounting", "Finance"],
   },
@@ -48,8 +47,8 @@ export const experience: TimelineItem[] = [
     location: "Atlanta, GA",
     date: "July 2025 — August 2025",
     bullets: [
-      "Deployed a Flask-backed Python ETL pipeline and demoed it to the business team in non-technical terms, enabling independent adoption and saving thousands of hours of manual data merging.",
-      "Consolidated 5+ data sources into one automated workflow, replacing manual merging for the business team.",
+      "Simplified data merging for the business team, enabling independent adoption and saving thousands of hours of manual work, by deploying a Flask-backed Python ETL pipeline as an automated data workflow.",
+      "Consolidated 5+ disparate data sources into a single, unified data system, creating one analytics-ready workflow.",
     ],
     tags: ["Python", "Flask", "ETL"],
   },
