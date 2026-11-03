@@ -5,10 +5,10 @@ export const projects: Project[] = [
     num: "001",
     title: "XR Lacrosse Goalie Training",
     image: "/Content/Lacrosse.png",
-    tags: ["Python", "C#", "Unity", "MagicLeap", "VIVE Trackers"],
-    shortDesc: "Extended-reality training system for lacrosse goalies.",
+    tags: ["C#", "Unity", "Magic Leap 2", "XR"],
+    shortDesc: "A Magic Leap 2 reaction-training simulator for lacrosse goalies.",
     details:
-      "An extended-reality training system for lacrosse goalies built with Unity, MagicLeap, and VIVE Trackers. The system provides real-time spatial feedback during drills, overlaying virtual shot trajectories and scoring zones onto the physical crease.\n\nThe data pipeline (Python) streams tracker positions into the Unity scene at low latency, while C# scripts handle game-logic, scoring, and session recording. Built as a senior design project at Villanova.",
+      "A Magic Leap 2 reaction-training simulator for lacrosse goalies, built as my senior capstone at Villanova. A virtual shooter fires on-target shots at random points in the corners of a virtual goal, and the goalie saves them with their real stick, which has the Magic Leap 2 controller mounted on it. The virtual floor lines up with the real floor, so shots arrive where a real shot would.\n\nBuilt in Unity 6 and C# on the Magic Leap Unity SDK, integrating 5+ real-time components (head and controller tracking, the animated shooter, ball flight, save detection, and voice and controller input). The real-time pipeline was optimized to 20 ms end-to-end latency so the simulation matches true game speed. After each session the headset shows where every shot went and which ones got past, and saves the results to that player's history.",
     github: "https://github.com/xrlacrosse-nova/NovaXRLacrosse",
   },
   {
@@ -23,12 +23,13 @@ export const projects: Project[] = [
   },
   {
     num: "003",
-    title: "Frisbee Valuation",
+    title: "Ultimate Frisbee Analytics",
     image: "/Content/Frisbee.png",
-    tags: ["Python", "Pandas", "Statistics"],
-    shortDesc: "Statistical model for evaluating ultimate frisbee players.",
+    tags: ["Python", "Pandas", "XGBoost", "PyTorch", "SHAP"],
+    shortDesc:
+      "Advanced stats and machine-learning models for evaluating ultimate frisbee players.",
     details:
-      "A statistical model for evaluating player and team performance in ultimate frisbee using play-by-play data. Inspired by WAR and other advanced sports metrics, the model assigns value to individual actions (completions, turnovers, goals, assists) weighted by field position and game context.\n\nBuilt entirely in Python with Pandas and NumPy, with visualisation outputs for player comparison and season-over-season trend analysis.",
+      "Statistical models for evaluating player and team performance in ultimate frisbee. The first, a valuation model inspired by WAR and other advanced sports metrics, assigns value to individual actions (completions, turnovers, goals, assists) weighted by field position and game context, with visualizations for player comparison and season-over-season trends.\n\nThe second goes further on the full 2026 UFA season: play-by-play for all 144 games, pulled from the league's stats API with the undocumented event codes worked out by cross-checking against team totals. Player archetypes come from clustering, and a composite efficiency rating has its weights learned by regression against team scoring. An XGBoost model with SHAP explanations, compared against a regression baseline and a PyTorch model, predicts each player's rating before a game. It's evaluated on a leak-free train/validation/holdout split and a weekly walk-forward backtest, which showed single-game standout predictions are mostly noise-limited (F1 of 0.53 against a ceiling of about 0.61).",
     github: "https://github.com/nguillet23/Frisbee-Valuation",
     dashboard: "https://nguillet23.github.io/Frisbee-Valuation/",
   },
