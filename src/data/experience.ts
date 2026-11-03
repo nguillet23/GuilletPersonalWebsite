@@ -53,16 +53,4 @@ export const experience: TimelineItem[] = [
     ],
     tags: ["Python", "Flask", "ETL"],
   },
-  {
-    id: "novaracing",
-    title: "Data Acquisition Electrical Member",
-    org: "NovaRacing",
-    orgLogo: "/Content/novaracing.png",
-    location: "Villanova, PA",
-    date: "December 2023 — December 2025",
-    bullets: [
-      "Helped recover sensor data from the Formula SAE car and redistribute to different engineering teams for analysis.",
-    ],
-    tags: ["Motec", "C#"],
-  },
 ];
