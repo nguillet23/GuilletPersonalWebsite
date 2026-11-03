@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { useScrollReveal } from "./useScrollReveal";
+import { useScrollReveal } from "../../src/hooks/useScrollReveal";
 
 type ObserverCallback = ConstructorParameters<typeof IntersectionObserver>[0];
 

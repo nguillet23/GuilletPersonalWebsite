@@ -1,7 +1,7 @@
 import { act, renderHook } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { useProjectModal } from "./useProjectModal";
-import type { Project } from "../types/project";
+import { useProjectModal } from "../../src/hooks/useProjectModal";
+import type { Project } from "../../src/types/project";
 
 const project: Project = {
   num: "001",

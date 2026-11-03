@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import { ProjectModal } from "./ProjectModal";
-import type { Project } from "../../types/project";
+import { ProjectModal } from "../../../src/components/projects/ProjectModal";
+import type { Project } from "../../../src/types/project";
 
 const project: Project = {
   num: "001",
