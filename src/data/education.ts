@@ -7,8 +7,8 @@ export const education: TimelineItem[] = [
     org: "B.S. Computer Engineering",
     orgLogo: "/Content/villanova.png",
     location: "Tech GPA: 3.9/4.0",
-    date: "Expected 2027",
-    bullets: ["Dean's List: All Semesters", "Minors: Computer Science, Mathematics, Business"],
+    date: "Expected May 2027",
+    bullets: ["Dean's List: All Semesters", "Minors: Mathematics, Computer Science, Business"],
     tags: ["Dean's List", "Computer Engineering"],
   },
   {
