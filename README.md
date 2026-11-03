@@ -14,13 +14,18 @@ Personal portfolio site built with Vite, React, and TypeScript. Live at
 ## Project structure
 
 ```
+CLAUDE.md       # Rules for Claude Code: commands, conventions, don't-touch areas
+.claude/        # Shared settings and skills (e.g. update-portfolio)
+docs/           # PRD, ARCHITECTURE, TASKS, DECISIONS, PROGRESS
 src/
   components/   # UI components, grouped by section (hero, about, timeline, projects, ui, layout)
-  data/         # Typed content — projects, experience, education, skills, social links
+  data/         # Typed content: projects, experience, education, skills, social links
   hooks/        # useScrollReveal, useProjectModal
   pages/        # Route-level composition (Experience); other routes render components directly
   types/        # Shared TypeScript interfaces for the data layer
   styles/       # Design tokens and global styles
+tests/          # Vitest + React Testing Library, mirroring src/
+scripts/        # Dev helpers (check.mjs runs every quality gate)
 public/
   Content/      # Images and resume served as static assets
 ```
@@ -38,6 +43,7 @@ public/
 | `npm run lint`         | Run ESLint                           |
 | `npm run format`       | Format the codebase with Prettier    |
 | `npm run format:check` | Check formatting without writing     |
+| `npm run check`        | Typecheck, lint, format check, tests |
 
 ## Deployment
 
