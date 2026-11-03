@@ -17,9 +17,9 @@ export function About() {
         </div>
         <div className={styles.text}>
           <p>
-            I'm a <strong>Computer Engineering Major</strong> with an interest using my technical
-            background to go into the sports industry to help improve player and organization{" "}
-            <strong>Selection, Development, Performance.</strong>
+            I'm a <strong>Computer Engineering</strong> student focused on{" "}
+            <strong>software and data engineering</strong>. I build data pipelines, machine-learning
+            models, and full-stack web apps that people use every week.
           </p>
           <p>
             Currently, I am a student at <strong>Villanova University</strong>, where I am on track
