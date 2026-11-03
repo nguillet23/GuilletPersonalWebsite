@@ -28,18 +28,6 @@ export const experience: TimelineItem[] = [
     tags: ["Python", "NLP", "Synthetic Data"],
   },
   {
-    id: "villanova-math-tutor",
-    title: "Math Tutor",
-    org: "Villanova Math Center",
-    orgLogo: "/Content/villanova.png",
-    location: "Villanova, PA",
-    date: "June 2025 — Present",
-    bullets: [
-      "Tutored 20+ students across 4 courses (Accounting, Finance, Calculus, Linear Algebra), turning the math behind machine learning into step-by-step walkthroughs.",
-    ],
-    tags: ["Calculus", "Linear Algebra", "Accounting", "Finance"],
-  },
-  {
     id: "hoa-forward-deployed-intern",
     title: "Forward Deployed Software Engineer Intern",
     org: "HomeOwners Advantage",
@@ -51,5 +39,17 @@ export const experience: TimelineItem[] = [
       "Consolidated 5+ disparate data sources into a single, unified data system, creating one analytics-ready workflow.",
     ],
     tags: ["Python", "Flask", "ETL"],
+  },
+  {
+    id: "villanova-math-tutor",
+    title: "Math Tutor",
+    org: "Villanova Math Center",
+    orgLogo: "/Content/villanova.png",
+    location: "Villanova, PA",
+    date: "June 2025 — Present",
+    bullets: [
+      "Tutored 20+ students across 4 courses (Accounting, Finance, Calculus, Linear Algebra), breaking down problem sets into step-by-step walkthroughs.",
+    ],
+    tags: ["Calculus", "Linear Algebra", "Accounting", "Finance"],
   },
 ];
