@@ -6,5 +6,5 @@ export interface NavLink {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: "github" | "linkedin" | "email";
+  icon: "github" | "linkedin" | "email" | "phone";
 }
