@@ -113,10 +113,9 @@ Last site update: **2026-09-17**. Sources: `Current_Projects/` and the resume da
 
 ### Future (not this round)
 
-- **XR Lacrosse live link**: add `live: https://xrlacrosse-nova.github.io/NovaXRLacrosse/` once the project site is deployed (404 on 2026-11-03).
+- **XR Lacrosse (December update)**: add `live: https://xrlacrosse-nova.github.io/NovaXRLacrosse/` once the project site is deployed (404 on 2026-11-03). Not part of this round.
 - **Huck It**: Milestone 2 (AI cutters, stats, replays) is only on the local `m2-ai-cutters` branch. After it's merged and deployed, update the card text and screenshot, since the live site still shows Milestone 1 with every mode marked "Coming soon".
 - **Frisbee card links**: `Frisbee-Game-Analysis` is public; consider pointing the card's GitHub link at it, or adding a second link type.
-- **About bio**: confirm whether "Captain for Main Line Ultimate" should match the resume's "Villanova Club Ultimate Frisbee".
 
 - **F1 Race Analysis**: get it to a better spot, push it to a GitHub repo, then add a card.
   Python on free OpenF1 + Jolpica data: tyre-degradation regression, pit-strategy optimiser
