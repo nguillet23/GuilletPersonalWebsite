@@ -67,4 +67,13 @@ export const projects: Project[] = [
     github: "https://github.com/nguillet23/huckit",
     live: "https://nguillet23.github.io/huckit/",
   },
+  {
+    num: "007",
+    title: "Nova Soccer Player Report Cards",
+    tags: ["React", "TypeScript", "PostgreSQL", "Clerk", "Row Level Security"],
+    shortDesc:
+      "A performance platform the Villanova Men's Soccer staff use to grade every player, every match.",
+    details:
+      "A web app for the Villanova Men's Soccer coaching staff and players. A coach uploads a Wyscout match report PDF, which is parsed entirely in the browser, matched to the roster, and reviewed and confirmed before it's saved. Each player's Performance Card then grades their games and season against position-specific standards the coaches set, with a radar chart, per-category grades, and an A–D overall grade.\n\nBuilt with React 19, TypeScript, and Vite, on Neon Postgres queried straight from the browser. Clerk handles invite-only sign-in with coach and player roles, and PostgreSQL Row Level Security is the real access control: players see only their own card. Coaches also get a standards editor, player comparisons, team stats, roster management, and a season selector.\n\nThis is a private project for the team, so the code and app aren't public.",
+  },
 ];
