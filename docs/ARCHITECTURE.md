@@ -27,6 +27,7 @@ All content is static, typed TypeScript in `src/data/`. There is no runtime fetc
 | `education.ts`    | `TimelineItem`      | TimelineColumn (right)         |
 | `skills.ts`       | `Skill`             | SkillsGrid (devicon CDN icons) |
 | `social-links.ts` | —                   | Hero, Footer                   |
+| `profile.ts`      | `Profile`           | Hero (name, pitch), About bio  |
 
 `Project` links are all optional: `github`, `dashboard`, `live`.
 

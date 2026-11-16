@@ -1,3 +1,4 @@
+import { profile } from "../../data/profile";
 import { socialLinks } from "../../data/social-links";
 import { Button } from "../ui/Button";
 import { IconLink } from "../ui/IconLink";
@@ -8,16 +9,13 @@ export function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.tag}>
-        <span className={styles.tagInner}>Computer Engineer</span>
+        <span className={styles.tagInner}>{profile.role}</span>
       </div>
 
       <div className={styles.content}>
         <div className={styles.text}>
-          <h1 className={styles.name}>Nicholas Guillet</h1>
-          <p className={styles.desc}>
-            Computer Engineering senior at Villanova University building software, data pipelines,
-            and AI workflows. Open to relocation.
-          </p>
+          <h1 className={styles.name}>{profile.name}</h1>
+          <p className={styles.desc}>{profile.heroPitch}</p>
           <div className={styles.btns}>
             <Button href={asset("/Content/Guillet_Resume.pdf")} download="Guillet_Resume.pdf">
               ↓ Resume
@@ -29,7 +27,7 @@ export function Hero() {
         </div>
 
         <div className={styles.photo}>
-          <img src={asset("/Content/Linkedin_Profile.jpg")} alt="Nicholas Guillet" />
+          <img src={asset("/Content/Linkedin_Profile.jpg")} alt={profile.name} />
         </div>
       </div>
     </section>
