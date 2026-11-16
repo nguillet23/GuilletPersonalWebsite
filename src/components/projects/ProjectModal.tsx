@@ -1,3 +1,4 @@
+import { useEffect, useId, useRef } from "react";
 import type { Project } from "../../types/project";
 import { Tag } from "../ui/Tag";
 import { Button } from "../ui/Button";
@@ -10,6 +11,18 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
+  const titleId = useId();
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  // Move focus into the dialog when it opens and hand it back to whatever opened it
+  // (usually the project card) when it closes.
+  useEffect(() => {
+    if (!project) return;
+    const opener = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+    return () => opener?.focus();
+  }, [project]);
+
   if (!project) return null;
 
   const paragraphs = project.details.split("\n\n");
@@ -19,18 +32,21 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
       className={styles.overlay}
       role="dialog"
       aria-modal="true"
+      aria-labelledby={titleId}
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
       <div className={styles.modal}>
-        <button className={styles.close} aria-label="Close" onClick={onClose}>
+        <button ref={closeRef} className={styles.close} aria-label="Close" onClick={onClose}>
           ✕
         </button>
         <ProjectImage project={project} className={styles.image} />
         <div className={styles.body}>
           <div className={styles.num}>{project.num}</div>
-          <div className={styles.title}>{project.title}</div>
+          <div id={titleId} className={styles.title}>
+            {project.title}
+          </div>
           <div className={styles.tags}>
             {project.tags.map((tag) => (
               <Tag key={tag} label={tag} />

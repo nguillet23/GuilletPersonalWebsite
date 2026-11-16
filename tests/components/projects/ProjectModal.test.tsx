@@ -30,6 +30,24 @@ describe("ProjectModal", () => {
     );
   });
 
+  it("is named by the project title and moves focus to the close button", () => {
+    render(<ProjectModal project={project} onClose={vi.fn()} />);
+    expect(screen.getByRole("dialog", { name: "Test Project" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /close/i })).toHaveFocus();
+  });
+
+  it("returns focus to the element that opened it when it closes", () => {
+    const opener = document.createElement("button");
+    document.body.appendChild(opener);
+    opener.focus();
+
+    const { rerender } = render(<ProjectModal project={project} onClose={vi.fn()} />);
+    rerender(<ProjectModal project={null} onClose={vi.fn()} />);
+
+    expect(opener).toHaveFocus();
+    opener.remove();
+  });
+
   it("calls onClose when the close button is clicked", () => {
     const onClose = vi.fn();
     render(<ProjectModal project={project} onClose={onClose} />);
