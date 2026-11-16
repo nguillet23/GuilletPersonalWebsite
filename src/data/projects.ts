@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     num: "001",
     title: "XR Lacrosse Goalie Training",
-    image: "/Content/Lacrosse.png",
+    image: "/Content/Lacrosse.jpg",
     tags: ["C#", "Unity", "Magic Leap 2", "XR"],
     shortDesc: "A Magic Leap 2 reaction-training simulator for lacrosse goalies.",
     details:
@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     num: "002",
     title: "HOA Budget Processor",
-    image: "/Content/HOA.png",
+    image: "/Content/HOA.jpg",
     tags: ["Python", "Flask", "pandas", "ETL"],
     shortDesc:
       "A Flask-backed ETL tool that automates budget data merging at HomeOwners Advantage.",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     num: "003",
     title: "Ultimate Frisbee Analytics",
-    image: "/Content/Frisbee.png",
+    image: "/Content/Frisbee.jpg",
     tags: ["Python", "Pandas", "XGBoost", "PyTorch", "SHAP"],
     shortDesc:
       "Advanced stats and machine-learning models for evaluating ultimate frisbee players.",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     num: "004",
     title: "Baseball Analysis",
-    image: "/Content/Baseball.png",
+    image: "/Content/Baseball.jpg",
     tags: ["Python", "Linear Regression", "Statcast", "Data Viz"],
     shortDesc: "Predictive models and visualizations built on 3,000+ MLB seasons of data.",
     details:
