@@ -35,6 +35,8 @@ jobs:
 
   deploy:
     needs: build
+    # A manual "Run workflow" can target any branch; only main ever deploys.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
