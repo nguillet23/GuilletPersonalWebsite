@@ -40,7 +40,9 @@ export function useProjectModal(): UseProjectModalResult {
       style.left = "";
       style.right = "";
       style.overflow = "";
-      window.scrollTo(0, scrollY);
+      // "instant" overrides the global `scroll-behavior: smooth`, which would otherwise
+      // animate the page from the top back down to the card on every close.
+      window.scrollTo({ top: scrollY, behavior: "instant" });
     };
   }, [selected, close]);
 
