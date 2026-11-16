@@ -17,5 +17,6 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/GuilletPersonalWebsite" },
+  // Follows `base` in vite.config.ts, so the repo name lives in one place.
+  { basename: import.meta.env.BASE_URL.replace(/\/$/, "") || "/" },
 );

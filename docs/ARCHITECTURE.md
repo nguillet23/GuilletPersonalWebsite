@@ -8,7 +8,7 @@ ESLint + Prettier · GitHub Pages via Actions.
 ## Shape
 
 ```
-index.html → src/main.tsx → src/router.tsx (createBrowserRouter, basename "/GuilletPersonalWebsite")
+index.html → src/main.tsx → src/router.tsx (createBrowserRouter, basename from Vite's base)
   └─ components/layout/Layout (Navbar + <Outlet/> + Footer)
        ├─ /            hero/Hero
        ├─ /about       about/About + SkillsGrid
@@ -34,9 +34,9 @@ All content is static, typed TypeScript in `src/data/`. There is no runtime fetc
 
 - **Content vs. UI:** updating the site means editing `src/data/` and `public/Content/`. A
   component only changes when the data shape changes.
-- **Base path:** `/GuilletPersonalWebsite/` is set in two places: `base` in `vite.config.ts`
-  (used by `src/lib/asset.ts`) and `basename` in `src/router.tsx`. Renaming the repo means
-  changing both.
+- **Base path:** `/GuilletPersonalWebsite/` is set only by `base` in `vite.config.ts`.
+  `src/lib/asset.ts` and the router `basename` both read it from `import.meta.env.BASE_URL`,
+  so renaming the repo means changing `base` alone.
 - **Hooks:** `useScrollReveal` (IntersectionObserver fade-in) and `useProjectModal`
   (open/close, scroll restore) are the only stateful logic and both are tested.
 - **Deploy:** push to `main` → build → copy `index.html` to `404.html` → Pages.
