@@ -3,13 +3,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem 4rem 4rem;
-  max-width: 1100px;
+  /* Fill the screen on every monitor; content stays vertically centered.
+     Top padding clears the fixed ~80px navbar. */
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 7rem 4rem 4rem;
+  /* Grow with wide screens instead of stopping at a fixed width. */
+  max-width: clamp(1100px, 75vw, 2200px);
   margin: 0 auto;
+  /* Base size for the small text below (em units): ~15px on laptops, growing on large monitors. */
+  font-size: clamp(15px, 0.55rem + 0.45vw, 24px);
 }
 
 .tag {
-  font-size: 0.72rem;
+  font-size: 0.77em;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
@@ -33,7 +40,7 @@
 
 .name {
   font-family: var(--serif);
-  font-size: clamp(3.5rem, 11vw, 7.5rem);
+  font-size: clamp(3.5rem, 7vw, 13rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -2px;
@@ -43,9 +50,9 @@
 }
 
 .desc {
-  font-size: 1rem;
+  font-size: 1.07em;
   color: var(--muted);
-  max-width: 600px;
+  max-width: 38em;
   margin-bottom: 1.25rem;
   line-height: 1.8;
   animation: fadeUp 0.5s 0.2s ease both;
@@ -60,26 +67,31 @@
   animation: fadeUp 0.5s 0.3s ease both;
 }
 
+/* Resume button label scales with the hero's base size. */
+.btns > a {
+  font-size: 0.9em;
+}
+
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  justify-content: space-between;
+  gap: clamp(2rem, 4vw, 6rem);
 }
 
 .text {
   flex: 1;
+  min-width: 0;
 }
 
 .photo {
   flex-shrink: 0;
-  width: 340px;
-  height: 340px;
+  width: clamp(260px, 26vw, 640px);
+  aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--muted);
-  margin-left: -2rem;
 }
 
 .photo img {
@@ -107,9 +119,18 @@
   }
 
   .photo {
-    margin-left: 0;
     width: 260px;
-    height: 260px;
+  }
+}
+
+/* Short screens (small laptops, zoomed-in browsers): size the name and photo by height too. */
+@media (max-height: 760px) and (min-width: 901px) {
+  .name {
+    font-size: clamp(3.5rem, 11vh, 7rem);
+  }
+
+  .photo {
+    width: clamp(240px, 42vh, 340px);
   }
 }
 

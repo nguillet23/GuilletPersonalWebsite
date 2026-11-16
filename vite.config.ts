@@ -8,6 +8,6 @@ export default defineConfig({
   base: "/GuilletPersonalWebsite/",
   test: {
     environment: "jsdom",
-    setupFiles: ["./src/test/setup.ts"],
+    setupFiles: ["./tests/setup.ts"],
   },
 });

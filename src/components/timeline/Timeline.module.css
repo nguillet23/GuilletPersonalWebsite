@@ -10,6 +10,12 @@
   width: 100%;
 }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .column {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import { ProjectModal } from "./ProjectModal";
-import type { Project } from "../../types/project";
+import { ProjectModal } from "../../../src/components/projects/ProjectModal";
+import type { Project } from "../../../src/types/project";
 
 const project: Project = {
   num: "001",
@@ -28,6 +28,24 @@ describe("ProjectModal", () => {
       "href",
       "https://github.com/example/test",
     );
+  });
+
+  it("is named by the project title and moves focus to the close button", () => {
+    render(<ProjectModal project={project} onClose={vi.fn()} />);
+    expect(screen.getByRole("dialog", { name: "Test Project" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /close/i })).toHaveFocus();
+  });
+
+  it("returns focus to the element that opened it when it closes", () => {
+    const opener = document.createElement("button");
+    document.body.appendChild(opener);
+    opener.focus();
+
+    const { rerender } = render(<ProjectModal project={project} onClose={vi.fn()} />);
+    rerender(<ProjectModal project={null} onClose={vi.fn()} />);
+
+    expect(opener).toHaveFocus();
+    opener.remove();
   });
 
   it("calls onClose when the close button is clicked", () => {

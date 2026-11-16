@@ -7,10 +7,7 @@ interface UseProjectModalResult {
   close: () => void;
 }
 
-/**
- * Replaces openModal/closeModal + escape-key handling
- * from js/projects.js.
- */
+/** Tracks the open project, closes it on Escape and locks page scroll while it is open. */
 export function useProjectModal(): UseProjectModalResult {
   const [selected, setSelected] = useState<Project | null>(null);
 
@@ -43,7 +40,9 @@ export function useProjectModal(): UseProjectModalResult {
       style.left = "";
       style.right = "";
       style.overflow = "";
-      window.scrollTo(0, scrollY);
+      // "instant" overrides the global `scroll-behavior: smooth`, which would otherwise
+      // animate the page from the top back down to the card on every close.
+      window.scrollTo({ top: scrollY, behavior: "instant" });
     };
   }, [selected, close]);
 

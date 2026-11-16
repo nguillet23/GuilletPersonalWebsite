@@ -1,7 +1,7 @@
 import { act, renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
-import { useProjectModal } from "./useProjectModal";
-import type { Project } from "../types/project";
+import { describe, expect, it, vi } from "vitest";
+import { useProjectModal } from "../../src/hooks/useProjectModal";
+import type { Project } from "../../src/types/project";
 
 const project: Project = {
   num: "001",
@@ -48,5 +48,16 @@ describe("useProjectModal", () => {
 
     act(() => result.current.close());
     expect(document.body.style.position).toBe("");
+  });
+
+  it("restores the scroll position instantly on close instead of smooth-scrolling", () => {
+    const scrollTo = vi.spyOn(window, "scrollTo").mockImplementation(() => {});
+    const { result } = renderHook(() => useProjectModal());
+
+    act(() => result.current.open(project));
+    act(() => result.current.close());
+
+    expect(scrollTo).toHaveBeenCalledWith({ top: 0, behavior: "instant" });
+    scrollTo.mockRestore();
   });
 });

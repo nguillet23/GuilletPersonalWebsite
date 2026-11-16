@@ -1,3 +1,4 @@
+import { profile } from "../../data/profile";
 import { socialLinks } from "../../data/social-links";
 import { Button } from "../ui/Button";
 import { IconLink } from "../ui/IconLink";
@@ -8,22 +9,15 @@ export function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.tag}>
-        <span className={styles.tagInner}>Computer Engineer</span>
+        <span className={styles.tagInner}>{profile.role}</span>
       </div>
 
       <div className={styles.content}>
         <div className={styles.text}>
-          <h1 className={styles.name}>Nicholas Guillet</h1>
-          <p className={styles.desc}>
-            Senior Computer Engineer at Villanova University interested in Software and Data
-            Engineering.
-          </p>
+          <h1 className={styles.name}>{profile.name}</h1>
+          <p className={styles.desc}>{profile.heroPitch}</p>
           <div className={styles.btns}>
-            <Button
-              as="a"
-              href={asset("/Content/Guillet_Resume.pdf")}
-              download="Guillet_Resume.pdf"
-            >
+            <Button href={asset("/Content/Guillet_Resume.pdf")} download="Guillet_Resume.pdf">
               ↓ Resume
             </Button>
             {socialLinks.map((link) => (
@@ -33,7 +27,7 @@ export function Hero() {
         </div>
 
         <div className={styles.photo}>
-          <img src={asset("/Content/Linkedin_Profile.jpg")} alt="Nicholas Guillet" />
+          <img src={asset("/Content/Linkedin_Profile.jpg")} alt={profile.name} />
         </div>
       </div>
     </section>

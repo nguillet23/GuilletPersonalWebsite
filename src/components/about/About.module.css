@@ -53,6 +53,14 @@
   text-align: center;
 }
 
+.alsoWorkWith {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;

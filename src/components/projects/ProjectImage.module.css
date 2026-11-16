@@ -1,0 +1,36 @@
+.placeholder {
+  background-color: var(--surface2);
+  background-image:
+    linear-gradient(rgba(124, 255, 212, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 255, 212, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.inner {
+  /* The parent's sizing class (e.g. display: block) can't affect this layout. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 100%;
+}
+
+.num {
+  font-family: var(--head);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(124, 255, 212, 0.35);
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border-hover);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
