@@ -20,7 +20,13 @@ export function ProjectCard({ project, onSelect }: ProjectCardProps) {
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") onSelect(project);
+        // Keys pressed on the GitHub link or View Details button bubble up here; let those
+        // elements handle their own keys instead of also opening the modal.
+        if (e.target !== e.currentTarget) return;
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault(); // stop Space from scrolling the page
+          onSelect(project);
+        }
       }}
     >
       <ProjectImage project={project} className={styles.image} />
