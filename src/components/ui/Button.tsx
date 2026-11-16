@@ -1,38 +1,20 @@
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
+import type { AnchorHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
 
 type Variant = "primary" | "ghost";
 
-interface ButtonAsButton extends ButtonHTMLAttributes<HTMLButtonElement> {
-  as?: "button";
+interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: Variant;
   children: ReactNode;
 }
 
-interface ButtonAsLink extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  as: "a";
-  variant?: Variant;
-  children: ReactNode;
-}
-
-type ButtonProps = ButtonAsButton | ButtonAsLink;
-
+/** A link styled as a button. Every call site links somewhere, so it always renders an `<a>`. */
 export function Button({ variant = "primary", children, className, ...rest }: ButtonProps) {
   const classes = [styles.btn, styles[variant], className].filter(Boolean).join(" ");
 
-  if (rest.as === "a") {
-    const { as: _as, ...anchorProps } = rest;
-    return (
-      <a className={classes} {...anchorProps}>
-        {children}
-      </a>
-    );
-  }
-
-  const { as: _as, ...buttonProps } = rest as ButtonAsButton;
   return (
-    <button className={classes} {...buttonProps}>
+    <a className={classes} {...rest}>
       {children}
-    </button>
+    </a>
   );
 }

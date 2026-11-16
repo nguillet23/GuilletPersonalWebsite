@@ -19,11 +19,7 @@ export function Hero() {
             and AI workflows. Open to relocation.
           </p>
           <div className={styles.btns}>
-            <Button
-              as="a"
-              href={asset("/Content/Guillet_Resume.pdf")}
-              download="Guillet_Resume.pdf"
-            >
+            <Button href={asset("/Content/Guillet_Resume.pdf")} download="Guillet_Resume.pdf">
               ↓ Resume
             </Button>
             {socialLinks.map((link) => (
