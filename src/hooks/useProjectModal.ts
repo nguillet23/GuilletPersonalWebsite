@@ -7,10 +7,7 @@ interface UseProjectModalResult {
   close: () => void;
 }
 
-/**
- * Replaces openModal/closeModal + escape-key handling
- * from js/projects.js.
- */
+/** Tracks the open project, closes it on Escape and locks page scroll while it is open. */
 export function useProjectModal(): UseProjectModalResult {
   const [selected, setSelected] = useState<Project | null>(null);
 

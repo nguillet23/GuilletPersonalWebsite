@@ -1,12 +1,7 @@
-import type { Skill } from "../../types/skill";
-import { skills as defaultSkills } from "../../data/skills";
+import { skills } from "../../data/skills";
 import styles from "./SkillsGrid.module.css";
 
-interface SkillsGridProps {
-  skills?: Skill[];
-}
-
-export function SkillsGrid({ skills = defaultSkills }: SkillsGridProps) {
+export function SkillsGrid() {
   return (
     <div className={styles.grid}>
       {skills.map((skill) => (
